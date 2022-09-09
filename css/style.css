@@ -69,6 +69,7 @@ select{
     position: relative;
     z-index: 1;
     height: 570px;
+   
 }
 #banner .slider .slider_item::before{
     content: '';
@@ -183,6 +184,7 @@ select{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10px;
 }
 #option .option_item .overlay{
     position: absolute;
@@ -215,16 +217,16 @@ select{
     border: 2px solid #de4644;  
     background: #de4644;
 }
-#option .option_item p.newTag{
+#option .option_item .newTag p{
     font-family: var(--raleway);
     font-weight: 500;
     color: #de4644;
     background: white;
-    top: 32px;
+    top: 50px;
     position: absolute;
-    width: 40%;
+    width: 60%;
     text-align: center;
-    left: -22px;
+    left: -50px;
     transform: rotate(-45deg);
     font-size: 16px;
     padding: 4px 0px;
@@ -283,27 +285,26 @@ select{
     background: rgba(0,0,0,0.6);
     top: 0;
     right: 0;
+    padding: 0 10px;
     transform-origin: right;
     transition: 00.3s linear;
     transform: scaleX(0);
+    height: 100%;
 }
 #featured .products_item_part .products_item:hover .img_part .overlay{
     transform: scale(1);
 }
-#featured .products_item_part .products_item .img_part .overlay ul{
-    padding: 54.5px 24px;
+#featured .products_item_part .products_item .img_part .overlay ul li{
+    height: calc(100% / 3);
+    display: flex;
+    align-items: center;
 }
 #featured .products_item_part .products_item .img_part .overlay ul li a{
-    width: 50px;
-    height: 50px;
-    border: 1px solid #c1c1c1;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 50px;
-    font-size: 30px;
-    margin: 15px 0px;
-    display: inline-block;
-    color:#fffefe ;
+    font-size: 200%;
+    color: #f1f1f1;
+    padding: 4px 10px; 
+    border: 1px solid #f1f1f1;
+    border-radius: 50%;   
     transition: 0.3s linear;
 }
 #featured .products_item_part .products_item .img_part .overlay ul li a:hover{
@@ -311,7 +312,6 @@ select{
     border: 1px solid #de4644;
 }
 #featured .products_item_part .products_item .content{
-    justify-content: space-between;
     font-family: var(--raleway);
     font-size: 16px;
     font-weight: 500;
