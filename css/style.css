@@ -124,10 +124,10 @@ select{
     color: white;
 }
 .fa-chevron-left{
-    left:45%;
+    left:40%;
 }
 .fa-chevron-right{
-    right:45%;
+    right:40%;
 }
 .icon:hover{
     background: #de4644;
@@ -184,7 +184,6 @@ select{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10px;
 }
 #option .option_item .overlay{
     position: absolute;
