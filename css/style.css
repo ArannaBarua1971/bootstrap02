@@ -1,3 +1,4 @@
+/* common css part */
 h1,h2,h3,h4,h5,h6,
 small,span,
 ul,ol,
@@ -12,10 +13,6 @@ a,a:hover{
     text-decoration: none;
     text-transform: none;
 }
-/* common css part */
-html{
-    scroll-behavior: smooth;
-}
 :root{
     --open: 'Open Sans', sans-serif;
     --raleway: 'Raleway', sans-serif;
@@ -27,7 +24,37 @@ select{
     color: #f1f1f1;
 }
 /* common css part */
-
+/* preloader css start */
+#preloader{
+    background:#f1f1f1;
+    inset:0;
+    position:fixed;
+    z-index:9999999999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#preloader .loader{
+    width:60px;
+    height:60px;
+    border:4px solid #de4644;
+    border-radius: 10px;
+    animation: loader 0.7s linear infinite alternate;    
+}
+#preloader #l2{
+    width: 30px;
+    height: 30px;
+    border:4px solid #444444;
+}
+@keyframes loader {
+    0%{
+        transform: rotate(0deg);
+    }    
+    100%{
+        transform: rotate(360deg);
+        border-radius: 50%;
+    }
+}
 
 /* header section css start */
 #header{
