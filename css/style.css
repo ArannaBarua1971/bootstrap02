@@ -45,7 +45,6 @@ select{
 #header #border{
     border-left:2px solid #dddddd;
     border-right:2px solid #dddddd;
-    padding: 16px 20px;
 }
 
  nav ul li a{
@@ -62,8 +61,7 @@ select{
 #banner .slider .slider_item{
     position: relative;
     z-index: 1;
-    height: 570px;
-   
+    padding:80px 0px;   
 }
 #banner .slider .slider_item::before{
     content: '';
@@ -72,7 +70,7 @@ select{
     background: rgba(0,0,0,0.6);
     z-index: -1;
 }
-#banner .slider .slider_item .banner_content h2{
+ #banner .slider .slider_item .banner_content h2{
     font-family: var(--raleway);
     font-size: 700;
     font-size: 70px;
@@ -101,13 +99,12 @@ select{
     color:white;
     transition: 0.3s linear;
     border-radius: 5px;
-    margin-right: 30px;
 }
 #banner .slider .slider_item .banner_content a:hover{
     border: 2px solid #de4644;
     background: #de4644;
 }
-.icon{
+/* .icon{
     position: absolute;
     z-index: 999;
     padding: 20px 12px;
@@ -128,19 +125,13 @@ select{
     border-top: 2px solid #de4644;
     border-left: 2px solid #de4644;
     border-right: 2px solid #de4644;
-}
+}  */
 /*banner section css end */
 
 /* facility section css start */
 #facility{
     background: #f1f1f1;
 }
-#facility .facility_item{
-    width:calc(100% / 3);
-    padding: 34px 0px 28px;
-    text-align: center;
-}
-
 #facility .facility_item h2{
     color: #222222;
     font-family: var(--roboto);
@@ -170,8 +161,8 @@ select{
 /* facility section css end */
 
 /* option section css start */
-#option{
-    padding-top: 100px;
+ #option{
+    padding-top: 52px;
 }
 #option .option_item{
     position: relative;
@@ -184,7 +175,7 @@ select{
     bottom: 17px;
     background: rgba(0,0,0,0.7);
     text-align: center;
-    padding: 10px 0px 10px;
+    padding: 10px 40px 10px;
 }
 #option .option_item .overlay h2,
 #option .option_item .overlay h3,
@@ -210,20 +201,6 @@ select{
     border: 2px solid #de4644;  
     background: #de4644;
 }
-#option .option_item .newTag p{
-    font-family: var(--raleway);
-    font-weight: 500;
-    color: #de4644;
-    background: white;
-    top: 50px;
-    position: absolute;
-    width: 60%;
-    text-align: center;
-    left: -50px;
-    transform: rotate(-45deg);
-    font-size: 16px;
-    padding: 4px 0px;
-}
 /* option section css start */
 
 /* featured section css start */
@@ -232,7 +209,7 @@ select{
 }
 .header_part{
     text-align: center;
-    padding:100px 0px 85px;
+    padding:80px 0px 85px;
 }
 .header_part h2{
     font-size: 40px;
@@ -247,13 +224,12 @@ select{
     content: '';
     background: url(../img/lineShap.png);
     position: absolute;
-    width: 172px;
+    width: 50%;
     height: 7px;
     bottom:-20px;
     left: 0;
 }
 #featured .menu_bar_for_featured_produts ul{
-    justify-content: center;
     margin-bottom: 30px;
 }
 #featured .menu_bar_for_featured_produts ul li{
@@ -312,6 +288,6 @@ select{
     padding: 12px 0px;
 }
 #featured .products_item_part .products_item ul li{
-    color: #de4644;
+    color: #de4644; 
 }
 /* featured section css end */
