@@ -24,39 +24,6 @@ select{
     color: #f1f1f1;
 }
 /* common css part */
-/* preloader css start */
-#preloader{
-    background:#f1f1f1;
-    inset:0;
-    position:fixed;
-    z-index:9999999999999;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#preloader .loader{
-    width:60px;
-    height:60px;
-    border:4px solid #de4644;
-    border-radius: 10px;
-    animation: loader 0.7s linear infinite alternate;    
-}
-#preloader #l2{
-    width: 30px;
-    height: 30px;
-    border:4px solid #444444;
-}
-@keyframes loader {
-    0%{
-        transform: rotate(0deg);
-    }    
-    100%{
-        transform: rotate(360deg);
-        border-radius: 50%;
-    }
-}
-
-/* header section css start */
 #header{
     background: #444444;
     color: #dddddd;
